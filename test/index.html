@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GView Test</title>
+</head>
+<body>
+	<div id="GViewContainer"></div>
+
+	<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+	<script type="text/javascript" src="../lib/gquery.js"></script>
+	<script type="text/javascript" src="../lib/gview.js"></script>
+	<script type="text/javascript">
+		const App = new GViewApp({
+			root: '/test',
+			view: 'hello',
+			data: {
+				name: 'Geoff'
+			},
+			logLevel: 8,
+			// components: ['button']
+		});
+	</script>
+</body>
+</html>
